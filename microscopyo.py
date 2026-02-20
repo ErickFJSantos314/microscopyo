@@ -15,7 +15,7 @@ import numpy as np
 
 # CAPTURA DE LAMINA
 
-caminho = (r'archives\>seu caminho SVS aqui<') # preencha aqui com o caminho do seu arquivo svs
+caminho = (r'archives\caminho_da_lamina.svs') #adicione o caminho da lâmina aqui
 slide = OpenSlide(caminho)
 
 # VARIAVEIS DE ESTADO
@@ -23,8 +23,8 @@ slide = OpenSlide(caminho)
 largura_total, altura_total = slide.dimensions
 posicao_X = largura_total // 2
 posicao_Y = altura_total // 2
-nivel_atual = 1
-tamanho_tela = (1024, 768)
+nivel_atual = slide.level_count - 1
+tamanho_tela = (800, 600)
 
 # LOOP DE FUNCIONAMENTO
 
@@ -41,7 +41,7 @@ while True:
     
     # MOVIMENTAÇÃO PELA LÂMIINA
 
-    passo = 500 * (2 ** nivel_atual)
+    passo = 350 * (2 ** nivel_atual)
 
     if tecla == ord('d'): posicao_X += passo
     if tecla == ord('a'): posicao_X -= passo
