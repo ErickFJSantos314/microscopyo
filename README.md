@@ -39,7 +39,7 @@ Este projeto permite visualizar e navegar por lâminas histológicas digitais (a
 
 1. Clone o repositório:
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/ErickFJSantos314/microscopyo
 cd "Microscopio virtual"
 ```
 
