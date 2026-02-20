@@ -117,7 +117,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 
 ## 👨‍💻 Autor
 
-Desenvolvido por Erick
+Desenvolvido por Erick Francisco de Jesus Santos
 
 ---
 
